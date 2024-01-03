@@ -1,0 +1,21 @@
+@import "script.js";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* background-color: rgb(68, 28, 91); */
+    height: 100vh;
+}
+.basebox{
+    background-color: rgb(34, 12, 43);
+    color: rgb(116, 114, 114);
+    /* font-size: x-large; */
+}
+.bg-transparent {
+    background-color: transparent !important; /* Use !important to override Bootstrap styles */
+    color: rgb(12, 12, 12) !important; /* Set text color to white */
+    background: rgb(80, 44, 44);
+}

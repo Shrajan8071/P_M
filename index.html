@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shrajan's Life</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <div class="basebox d-flex flex-column justify-content-center align-items-center h-100 w-100" >
+      <!-- time  -->
+      <div class="d-flex flex-column justify-content-center my-3">
+        <div class="d-flex flex-row justify-content-center m-0 p-0">
+          <p id="date" class="m-0 p-0"></p>
+        </div>
+        <div class="d-flex flex-row justify-content-center m-0 p-0">
+          <p id="time" class="m-0 p-0"></p>
+        </div>
+      </div>
+      <!-- title  -->
+      <div class="d-flex flex-row justify-content-center">
+        <span class="fw-bolder fs-2">21-Challange</span>
+      </div>
+      <!-- form  -->
+      <form name="submit-to-google-sheet" class="d-flex flex-column w-75 p-2">
+        <!-- list  -->
+
+        <div>
+          <input class="form-check-input w-50" hidden type="text" name="Date" id="dateInner" placeholder="check">
+          <input class="form-check-input w-50" hidden type="text" name="Time" id="timeInner" placeholder="check">
+        </div>
+
+        <div class="d-flex flex-row justify-content-between">
+          <span class="text-white">Meditation</span>
+          <div class="d-flex flex-row">
+            <div class="form-check mx-3">
+              <input class="form-check-input" type="radio" name="Meditation" id="Yes" value="Yes" required>
+              <label class="form-check-label" for="Yes" >
+                Yes
+              </label>
+            </div>
+            <div class="form-check mx-3">
+              <input class="form-check-input" type="radio" name="Meditation" id="No" value="No" required>
+              <label class="form-check-label" for="No">
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex flex-row justify-content-between">
+          <span class="text-white">Pooja</span>
+          <div class="d-flex flex-row">
+            <div class="form-check mx-3">
+              <input class="form-check-input" type="radio" name="Pooja" id="Yes" value="Yes" required>
+              <label class="form-check-label" for="Yes">
+                Yes
+              </label>
+            </div>
+            <div class="form-check mx-3">
+              <input class="form-check-input" type="radio" name="Pooja" id="No"value="No" required>
+              <label class="form-check-label" for="No">
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex flex-row justify-content-between">
+          <span class="text-white">Gym</span>
+          <div class="d-flex flex-row">
+            <div class="form-check mx-3">
+              <input class="form-check-input" type="radio" name="Gym" id="Yes" value="Yes"required>
+              <label class="form-check-label" for="Yes">
+                Yes
+              </label>
+            </div>
+            <div class="form-check mx-3">
+              <input class="form-check-input" type="radio" name="Gym" id="No" value="No"required>
+              <label class="form-check-label" for="No">
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex flex-row justify-content-between">
+          <span class="text-white">DSA</span>
+          <div class="d-flex flex-row">
+            <div class="form-check mx-3">
+              <input class="form-check-input" type="radio" name="DSA" id="Yes" value="Yes" required>
+              <label class="form-check-label" for="Yes">
+                Yes
+              </label>
+            </div>
+            <div class="form-check mx-3">
+              <input class="form-check-input" type="radio" name="DSA" id="No" value="No" required>
+              <label class="form-check-label" for="No">
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex flex-row justify-content-between">
+          <span class="text-white">Extra skills</span>
+          <div class="d-flex flex-row">
+            <div class="form-check mx-3">
+              <input class="form-check-input" type="radio" name="Skills" id="Yes" value="Yes" required>
+              <label class="form-check-label" for="Yes">
+                Yes
+              </label>
+            </div>
+            <div class="form-check mx-3">
+              <input class="form-check-input" type="radio" name="Skills" id="No" value="No" required>
+              <label class="form-check-label" for="No">
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex flex-row justify-content-between">
+          <span class="text-white">Sugar</span>
+          <div class="d-flex flex-row">
+            <div class="form-check mx-3">
+              <input class="form-check-input" type="radio" name="Sugar" id="Yes" value="Yes" required>
+              <label class="form-check-label" for="Yes">
+                Yes
+              </label>
+            </div>
+            <div class="form-check mx-3">
+              <input class="form-check-input" type="radio" name="Sugar" id="No" value="No" required>
+              <label class="form-check-label" for="No">
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex flex-row justify-content-between">
+          <span class="text-white">That</span>
+          <div class="d-flex flex-row">
+            <div class="form-check mx-3">
+              <input class="form-check-input" type="radio" name="That" id="Yes" value="Yes" required>
+              <label class="form-check-label" for="Yes">
+                Yes
+              </label>
+            </div>
+            <div class="form-check mx-3">
+              <input class="form-check-input" type="radio" name="That" id="No" value="No" required>
+              <label class="form-check-label" for="No">
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex flex-row justify-content-between">
+          <span class="text-white">News</span>
+          <div class="d-flex flex-row">
+            <div class="form-check mx-3">
+              <input class="form-check-input" type="radio" name="News" id="Yes" value="Yes" required>
+              <label class="form-check-label" for="Yes">
+                Yes
+              </label>
+            </div>
+            <div class="form-check mx-3">
+              <input class="form-check-input" type="radio" name="News" id="No" value="No" required>
+              <label class="form-check-label" for="No">
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex flex-row justify-content-between">
+          <span class="text-white">Brush twice</span>
+          <div class="d-flex flex-row">
+            <div class="form-check mx-3">
+              <input class="form-check-input" type="radio" name="Brush" id="Yes" value="Yes" required>
+              <label class="form-check-label" for="Yes">
+                Yes
+              </label>
+            </div>
+            <div class="form-check mx-3">
+              <input class="form-check-input" type="radio" name="Brush" id="No" value="No" required>
+              <label class="form-check-label" for="No">
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex flex-row justify-content-between">
+          <span class="text-white">Satisfied ?</span>
+          <div class="d-flex flex-row">
+            <div class="form-check mx-3">
+              <input class="form-check-input" type="radio" name="Satisfied" id="Yes" value="Yes" required>
+              <label class="form-check-label" for="Yes">
+                Yes
+              </label>
+            </div>
+            <div class="form-check mx-3">
+              <input class="form-check-input" type="radio" name="Satisfied" id="No" value="No" required>
+              <label class="form-check-label" for="No">
+                No
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <!-- button  -->
+        <div class="d-flex flex-row justify-content-center mt-3">
+          <button type="submit" class="btn btn-dark w-50">Submit</button>
+        </div>
+      
+      
+      
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
